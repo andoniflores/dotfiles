@@ -116,4 +116,8 @@ if ! shopt -oq posix; then
   fi
 fi
 
+if [ -f ~/.aliases ]; then
+    . ~/aliases
+fi
+
 eval "$(oh-my-posh init bash --config 'https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/jandedobbeleer.omp.json')" 
