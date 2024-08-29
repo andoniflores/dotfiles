@@ -9,6 +9,18 @@
       "alignment": "left",
       "segments": [
         {
+          "type": "os",
+          "style": "diamond",
+          "foreground": "#DCD7BA",
+          "background": "#76946A",
+          "leading_diamond": "",
+          "trailing_diamond": "",
+          "template": " {{ if .WSL }}WSL at {{ end }}{{.Icon}} ",
+          "properties": {
+            "windows": "\uE62A"
+          }
+        },
+        {
           "type": "session",
           "style": "diamond",
           "foreground": "#DCD7BA",
@@ -66,12 +78,12 @@
           "style": "diamond",
           "foreground": "#DCD7BA",
           "background": "#2B3328",
-          "status_template": [
-            "{{ if eq .Code 0 }}\uf00c{{ else }}\uf071{{ end }}"
+          "background_templates": [
+            "{{ if .Error }}#e91e63{{ end }}"
           ],
           "leading_diamond": "",
           "trailing_diamond": "",
-          "template": " 󱐋 ",
+          "template": " \uf0e7 ",
           "properties": {
             "always_enabled": true
           }
