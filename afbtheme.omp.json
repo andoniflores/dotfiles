@@ -15,7 +15,7 @@
           "background": "#76946A",
           "leading_diamond": "",
           "trailing_diamond": "",
-          "template": " {{ if .WSL }}WSL at {{ end }}{{.Icon}} ",
+          "template": " {{ if .WSL }}(WSL){{ end }}{{.Icon}} ",
           "properties": {
             "windows": "\uE62A"
           }
